@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "name_de": "Rosenstrauß",
+      "name_en": "Rose Bouquet",
+      "name_ar": "باقة ورد",
+      "name_es": "Ramo de rosas",
+      "description_de": "Ein wunderschöner Strauß roter Rosen.",
+      "description_en": "A beautiful bouquet of red roses.",
+      "description_ar": "باقة جميلة من الورود الحمراء.",
+      "description_es": "Un hermoso ramo de rosas rojas.",
+      "price": 29.99,
+      "image": "rose_bouquet.jpg"
+    },
+    {
+      "id": 2,
+      "name_de": "Tulpen",
+      "name_en": "Tulips",
+      "name_ar": "زهرة التوليب",
+      "name_es": "Tulipanes",
+      "description_de": "Ein frühlingshafter Tulpenstrauß.",
+      "description_en": "A spring-like tulip bouquet.",
+      "description_ar": "باقة أزهار توليب ربيعية.",
+      "description_es": "Un ramo de tulipanes primaverales.",
+      "price": 24.99,
+      "image": "tulips.jpg"
+    }
+  ]
+  

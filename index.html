@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alawi`s Blütenzauber</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.webp" alt="Alawi`s Blütenzauber Logo">
+                </a>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-key="homepage_title_part1">Home</a></li>
+                <li><a href="products.html" data-key="product_page_title">Products</a></li>
+                <li><a href="contact.html" data-key="contact_page_title">Contact</a></li>
+            </ul>
+            <div class="language-dropdown">
+                <span class="current-lang">
+                    <img src="assets/img/flags/de.png" alt="Deutsch" data-lang="de">
+                </span>
+                <ul class="lang-options">
+                    <li data-lang="de">
+                        <img src="assets/img/flags/de.png" alt="Deutsch">
+                        <span>Deutsch</span>
+                    </li>
+                    <li data-lang="en">
+                        <img src="assets/img/flags/gb.png" alt="English">
+                        <span>English</span>
+                    </li>
+                    <li data-lang="ar">
+                        <img src="assets/img/flags/sa.png" alt="العربية">
+                        <span>العربية</span>
+                    </li>
+                    <li data-lang="es">
+                        <img src="assets/img/flags/es.png" alt="Español">
+                        <span>Español</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="slider">
+                <img src="assets/img/hero1.jpg" alt="Bouquet 1" class="active">
+                <img src="assets/img/hero2.jpg" alt="Bouquet 2">
+                <img src="assets/img/hero3.jpg" alt="Alawi">
+                <img src="assets/img/hero4.jpg" alt="Bouquet 3">
+                <img src="assets/img/hero5.jpg" alt="Bouquet 4">
+                <img src="assets/img/hero6.jpg" alt="Bouquet 5">
+                <button class="prev">←</button>
+                <button class="next">→</button>
+            </div>
+            <h1 class="homepage-title">
+                <span data-key="homepage_title_part1">Willkommen bei</span>
+                <h1 style="display: inline;" data-key="homepage_title_part2"> Alawi`s Blütenzauber</h1>
+            </h1>
+        </section>
+
+        <section class="intro">
+            <p data-key="intro_text">Wir bieten Ihnen die schönsten Blumenarrangements für jeden Anlass.</p>
+        </section>
+
+        <section class="featured-products">
+            <h2 data-key="product_page_title">Unsere Blumenarrangements</h2>
+            <div class="product-grid" id="featured-products"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Alawi`s Blütenzauber - All rights reserved. Website developed by <a
+                href="https://leobermeo.com">Leo Bermeo - IT Software Engineer</a>.</p>
+    </footer>
+
+    <a href="https://wa.me/+494027809160" class="whatsapp-btn" target="_blank">
+        <img src="assets/img/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

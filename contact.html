@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alawi`s Blütenzauber - Kontakt</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo.webp" alt="Alawi`s Blütenzauber Logo">
+                </a>
+            </div>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" data-key="homepage_title_part1">Home</a></li>
+                <li><a href="products.html" data-key="product_page_title">Products</a></li>
+                <li><a href="contact.html" data-key="contact_page_title">Contact</a></li>
+            </ul>
+            <div class="language-dropdown">
+                <span class="current-lang">
+                    <img src="assets/img/flags/de.png" alt="Deutsch" data-lang="de">
+                </span>
+                <ul class="lang-options">
+                    <li data-lang="de">
+                        <img src="assets/img/flags/de.png" alt="Deutsch">
+                        <span>Deutsch</span>
+                    </li>
+                    <li data-lang="en">
+                        <img src="assets/img/flags/gb.png" alt="English">
+                        <span>English</span>
+                    </li>
+                    <li data-lang="ar">
+                        <img src="assets/img/flags/sa.png" alt="العربية">
+                        <span>العربية</span>
+                    </li>
+                    <li data-lang="es">
+                        <img src="assets/img/flags/es.png" alt="Español">
+                        <span>Español</span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1 data-key="contact_page_title">Kontaktieren Sie uns</h1>
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-key="contact_name_label">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-key="contact_email_label">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-key="contact_message_label">Nachricht *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="human-check" data-key="contact_human_check_label">Was ist 2 + 2? *</label>
+                        <input type="number" id="human-check" name="human-check" required>
+                    </div>
+                    <button type="submit" data-key="contact_submit">Absenden</button>
+                </form>
+
+                <!-- Store Info -->
+                <div class="store-info">
+                    <h2 data-key="contact_address_title">Unsere Adresse</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2369.814592984657!2d10.01361521597692!3d53.58356498002992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b18f8e8e8f8e8f%3A0x8e8f8e8f8e8f8e8f!2sPo%C3%9Fmoorweg%2069%2C%2022301%20Hamburg%2C%20Germany!5e0!3m2!1sen!2sus!4v1698765432100!5m2!1sen!2sus"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <p data-key="contact_address">Ecke, Poßmoorweg 69, Barmbeker Str. 73-78, 22301 Hamburg</p>
+
+                    <h2 data-key="contact_hours_title">Öffnungszeiten</h2>
+                    <ul>
+                        <li data-key="contact_hours_sunday">Sonntag: 9:00–18:00</li>
+                        <li data-key="contact_hours_weekdays">Montag–Freitag: 8:00–20:00</li>
+                        <li data-key="contact_hours_saturday">Samstag: 9:00–18:00</li>
+                    </ul>
+
+                    <h2 data-key="contact_info_title">Kontakt</h2>
+                    <p data-key="contact_phone">Telefon: +49 40 27809160</p>
+                    <p data-key="contact_email">Email: info@alawis-blutenzauber.de</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="current-year"></span> Alawi`s Blütenzauber - All rights reserved. Website developed by <a href="https://leobermeo.com">Leo Bermeo - IT Software Engineer</a>.</p>
+    </footer>
+
+    <a href="https://wa.me/+494027809160" class="whatsapp-btn" target="_blank">
+        <img src="assets/img/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
