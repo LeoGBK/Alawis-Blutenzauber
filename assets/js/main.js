@@ -136,7 +136,6 @@ function initSlider() {
 }
 
 // Load featured products (Homepage)
-// Load featured products (Homepage)
 function loadFeaturedProducts() {
     const grid = document.getElementById('featured-products');
     if (!grid) return; // Skip if not on homepage
@@ -145,7 +144,11 @@ function loadFeaturedProducts() {
         .then(response => response.json())
         .then(products => {
             const lang = document.documentElement.lang;
-            grid.innerHTML = products.map(product => `
+
+            // Filter only products marked as "featured: true"
+            const featuredProducts = products.filter(p => p.featured);
+
+            grid.innerHTML = featuredProducts.map(product => `
                 <div class="product">
                     <img src="assets/img/${product.image}" alt="${product[`name_${lang}`]}">
                     <h3>${product[`name_${lang}`]}</h3>
