@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(response => response.json())
         .then(translations => {
             window.translations = translations;
-            setLanguage('de'); // Default language
+            const storedLang = localStorage.getItem('preferredLang') || 'de';
+            setLanguage(storedLang);
             initSlider();
             loadFeaturedProducts();
             loadProducts();
@@ -33,16 +34,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const langDropdown = document.querySelector('.language-dropdown');
     langDropdown.addEventListener('click', (e) => {
         const li = e.target.closest('li');
-        langDropdown.classList.toggle('active'); // Toggle dropdown visibility
+        langDropdown.classList.toggle('active');
         if (li) {
             const lang = li.dataset.lang;
+            localStorage.setItem('preferredLang', lang); // ✅ Store in localStorage
             setLanguage(lang);
             const flagSrc = li.querySelector('img').src;
             document.querySelector('.current-lang img').src = flagSrc;
             document.querySelector('.current-lang img').dataset.lang = lang;
-            langDropdown.classList.remove('active'); // Close dropdown after selection
+            langDropdown.classList.remove('active');
         }
     });
+
 
     // Update current year in footer
     const currentYearElements = document.querySelectorAll('#current-year');
