@@ -6,6 +6,22 @@ document.addEventListener('DOMContentLoaded', () => {
             window.translations = translations;
             const storedLang = localStorage.getItem('preferredLang') || 'de';
             setLanguage(storedLang);
+
+            // Update flag image and alt attribute on page load
+            const currentFlag = document.querySelector('.current-lang img');
+            if (currentFlag) {
+                const flagMap = {
+                    de: { src: 'assets/img/flags/de.png', alt: 'Deutsch' },
+                    en: { src: 'assets/img/flags/gb.png', alt: 'English' },
+                    ar: { src: 'assets/img/flags/sa.png', alt: 'العربية' },
+                    es: { src: 'assets/img/flags/es.png', alt: 'Español' }
+                };
+
+                currentFlag.src = flagMap[storedLang].src;
+                currentFlag.alt = flagMap[storedLang].alt;
+                currentFlag.dataset.lang = storedLang;
+            }
+
             initSlider();
             loadFeaturedProducts();
             loadProducts();
